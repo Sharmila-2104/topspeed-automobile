@@ -1,0 +1,38 @@
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Infrastructure.deps.json
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Infrastructure.runtimeconfig.json
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Infrastructure.dll
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Infrastructure.pdb
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Application.dll
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Domain.dll
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Application.pdb
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Domain.pdb
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.csproj.AssemblyReference.cache
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.AssemblyInfoInputs.cache
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.AssemblyInfo.cs
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.FFF4B8D8.Up2Date
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.dll
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\refint\TopSpeed.Infrastructure.dll
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.pdb
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.genruntimeconfig.cache
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\ref\TopSpeed.Infrastructure.dll
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Infrastructure.deps.json
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Infrastructure.runtimeconfig.json
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Infrastructure.dll
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Infrastructure.pdb
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Application.dll
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Domain.dll
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Application.pdb
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\bin\Debug\net8.0\TopSpeed.Domain.pdb
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.csproj.AssemblyReference.cache
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.AssemblyInfoInputs.cache
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.AssemblyInfo.cs
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.FFF4B8D8.Up2Date
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.dll
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\refint\TopSpeed.Infrastructure.dll
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.pdb
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\TopSpeed.Infrastructure.genruntimeconfig.cache
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Infrastruture\obj\Debug\net8.0\ref\TopSpeed.Infrastructure.dll
