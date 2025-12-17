@@ -1,0 +1,24 @@
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Domain\bin\Debug\net8.0\TopSpeed.Domain.deps.json
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Domain\bin\Debug\net8.0\TopSpeed.Domain.dll
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Domain\bin\Debug\net8.0\TopSpeed.Domain.pdb
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.csproj.AssemblyReference.cache
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.AssemblyInfoInputs.cache
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.AssemblyInfo.cs
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.csproj.CoreCompileInputs.cache
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.dll
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\refint\TopSpeed.Domain.dll
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.pdb
+D:\Sharmila\Old\Out Studies project\Testing\New folder\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\ref\TopSpeed.Domain.dll
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Domain\bin\Debug\net8.0\TopSpeed.Domain.deps.json
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Domain\bin\Debug\net8.0\TopSpeed.Domain.dll
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Domain\bin\Debug\net8.0\TopSpeed.Domain.pdb
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.csproj.AssemblyReference.cache
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.AssemblyInfoInputs.cache
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.AssemblyInfo.cs
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.csproj.CoreCompileInputs.cache
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.dll
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\refint\TopSpeed.Domain.dll
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\TopSpeed.Domain.pdb
+D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Domain\obj\Debug\net8.0\ref\TopSpeed.Domain.dll
