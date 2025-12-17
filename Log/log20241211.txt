@@ -1,0 +1,352 @@
+2024-12-11 10:08:43.964 +05:30 [INF] Executed DbCommand (103ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-12-11 10:08:44.085 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-12-11 10:08:44.088 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-12-11 10:08:44.152 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-12-11 10:08:44.160 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-12-11 10:08:44.163 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-12-11 10:08:44.165 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-12-11 10:08:44.178 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-12-11 10:08:44.192 +05:30 [INF] No migrations were applied. The database is already up to date.
+2024-12-11 10:08:44.209 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [VehicleType] AS [v]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-12-11 10:08:44.397 +05:30 [INF] User profile is available. Using 'C:\Users\SwiftProSys\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-11 10:08:45.140 +05:30 [INF] Now listening on: https://localhost:7093
+2024-12-11 10:08:45.153 +05:30 [INF] Now listening on: http://localhost:5113
+2024-12-11 10:08:45.193 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-11 10:08:45.197 +05:30 [INF] Hosting environment: Development
+2024-12-11 10:08:45.218 +05:30 [INF] Content root path: D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web
+2024-12-11 10:08:45.827 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/ - null null
+2024-12-11 10:08:46.134 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2024-12-11 10:08:46.155 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2024-12-11 10:08:46.230 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2024-12-11 10:08:46.240 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2024-12-11 10:08:46.311 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+2024-12-11 10:08:46.366 +05:30 [INF] Executing ViewResult, running view Index.
+2024-12-11 10:08:46.586 +05:30 [INF] Executed ViewResult - view Index executed in 209.8669ms.
+2024-12-11 10:08:46.594 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 435.0688ms
+2024-12-11 10:08:46.597 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2024-12-11 10:08:46.598 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2024-12-11 10:08:46.603 +05:30 [INF] Session started; Key:331fdf12-917e-9e97-4b90-b5124993951a, Id:d4757cc1-4268-5a98-acb1-29c0eb0ae4b2
+2024-12-11 10:08:46.610 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/ - 200 null text/html; charset=utf-8 784.7621ms
+2024-12-11 10:08:46.615 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/css/site.css?v=w1mNYuscKYj6pXZh4YNqMZBB0mZ41S5DLTlJqyAiRu0 - null null
+2024-12-11 10:08:46.623 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/TopSpeed.Web.styles.css?v=YZkZwgPycvQ8GQf8xDuhpckUrq54SlaWlbvnQKSAm0Y - null null
+2024-12-11 10:08:46.626 +05:30 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\wwwroot\css\site.css'
+2024-12-11 10:08:46.627 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/css/site.css?v=w1mNYuscKYj6pXZh4YNqMZBB0mZ41S5DLTlJqyAiRu0 - 200 364 text/css 12.0838ms
+2024-12-11 10:08:46.627 +05:30 [INF] Sending file. Request path: '/TopSpeed.Web.styles.css'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\obj\Debug\net8.0\scopedcss\bundle\TopSpeed.Web.styles.css'
+2024-12-11 10:08:46.634 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib/jquery/dist/jquery.min.js - null null
+2024-12-11 10:08:46.636 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/TopSpeed.Web.styles.css?v=YZkZwgPycvQ8GQf8xDuhpckUrq54SlaWlbvnQKSAm0Y - 200 1129 text/css 12.6757ms
+2024-12-11 10:08:46.640 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2024-12-11 10:08:46.736 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - null null
+2024-12-11 10:08:46.749 +05:30 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\wwwroot\js\site.js'
+2024-12-11 10:08:46.750 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - 200 230 text/javascript 13.575ms
+2024-12-11 10:08:46.753 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:08:46.757 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:08:46.764 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 11.2201ms
+2024-12-11 10:08:46.788 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2024-12-11 10:08:46.802 +05:30 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\wwwroot\lib\jquery\dist\jquery.min.js'
+2024-12-11 10:08:46.802 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 161.8458ms
+2024-12-11 10:08:46.804 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 169.6617ms
+2024-12-11 10:08:46.808 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2024-12-11 10:08:46.818 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 220.2776ms
+2024-12-11 10:08:46.856 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.2ms
+2024-12-11 10:08:46.966 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/favicon.ico - null null
+2024-12-11 10:08:46.985 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\wwwroot\favicon.ico'
+2024-12-11 10:08:46.987 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/favicon.ico - 200 5430 image/x-icon 21.1523ms
+2024-12-11 10:09:18.548 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - null null
+2024-12-11 10:09:18.657 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib/bootstrap/dist/css/bootstrap.min.css.map - null null
+2024-12-11 10:09:18.663 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2024-12-11 10:09:18.677 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - 200 327261 text/plain 128.1221ms
+2024-12-11 10:09:18.750 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+2024-12-11 10:09:18.752 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib/bootstrap/dist/css/bootstrap.min.css.map - 200 449111 text/plain 94.3184ms
+2024-12-11 10:17:13.107 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/ - null null
+2024-12-11 10:17:13.130 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2024-12-11 10:17:13.132 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2024-12-11 10:17:13.225 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2024-12-11 10:17:13.230 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2024-12-11 10:17:13.237 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+2024-12-11 10:17:13.242 +05:30 [INF] Accessing expired session, Key:331fdf12-917e-9e97-4b90-b5124993951a
+2024-12-11 10:17:13.244 +05:30 [INF] Executing ViewResult, running view Index.
+2024-12-11 10:17:13.254 +05:30 [INF] Executed ViewResult - view Index executed in 9.8595ms.
+2024-12-11 10:17:13.309 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 175.5699ms
+2024-12-11 10:17:13.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:17:13.345 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:17:13.353 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2024-12-11 10:17:13.356 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 43.9309ms
+2024-12-11 10:17:13.366 +05:30 [INF] Session started; Key:331fdf12-917e-9e97-4b90-b5124993951a, Id:ab2e631c-a32f-d117-23df-e8347ecb2669
+2024-12-11 10:17:13.370 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/ - 200 null text/html; charset=utf-8 262.8937ms
+2024-12-11 10:17:13.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.9427ms
+2024-12-11 10:17:18.401 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Identity/Account/Login - null null
+2024-12-11 10:17:18.423 +05:30 [INF] Executing endpoint '/Account/Login'
+2024-12-11 10:17:18.438 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-12-11 10:17:18.462 +05:30 [INF] Executing handler method TopSpeed.Web.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-12-11 10:17:18.467 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2024-12-11 10:17:18.469 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2024-12-11 10:17:18.472 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-12-11 10:17:18.475 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-12-11 10:17:18.515 +05:30 [INF] Executed page /Account/Login in 75.8217ms
+2024-12-11 10:17:18.548 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2024-12-11 10:17:18.548 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2024-12-11 10:17:18.554 +05:30 [INF] Executed endpoint '/Account/Login'
+2024-12-11 10:17:18.617 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Identity/Account/Login - 200 null text/html; charset=utf-8 215.9483ms
+2024-12-11 10:17:18.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:17:18.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:17:18.624 +05:30 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js'
+2024-12-11 10:17:18.630 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 8.4382ms
+2024-12-11 10:17:18.635 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib/jquery-validation/dist/jquery.validate.min.js - 200 24601 text/javascript 86.6972ms
+2024-12-11 10:17:18.645 +05:30 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js'
+2024-12-11 10:17:18.650 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.5506ms
+2024-12-11 10:17:18.654 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 200 5824 text/javascript 105.4642ms
+2024-12-11 10:17:27.929 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7093/Identity/Account/Login - application/x-www-form-urlencoded 264
+2024-12-11 10:17:27.937 +05:30 [INF] Executing endpoint '/Account/Login'
+2024-12-11 10:17:27.941 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-12-11 10:17:27.962 +05:30 [INF] Executing handler method TopSpeed.Web.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2024-12-11 10:17:27.982 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-12-11 10:17:28.155 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-12-11 10:17:28.175 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-12-11 10:17:28.181 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-12-11 10:17:28.190 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2024-12-11 10:17:28.196 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-12-11 10:17:28.198 +05:30 [INF] User logged in.
+2024-12-11 10:17:28.201 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2024-12-11 10:17:28.204 +05:30 [INF] Executing LocalRedirectResult, redirecting to /.
+2024-12-11 10:17:28.206 +05:30 [INF] Executed page /Account/Login in 263.2572ms
+2024-12-11 10:17:28.207 +05:30 [INF] Executed endpoint '/Account/Login'
+2024-12-11 10:17:28.211 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7093/Identity/Account/Login - 302 0 null 282.5314ms
+2024-12-11 10:17:28.212 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/ - null null
+2024-12-11 10:17:28.219 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2024-12-11 10:17:28.221 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2024-12-11 10:17:28.226 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2024-12-11 10:17:28.230 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2024-12-11 10:17:28.236 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+2024-12-11 10:17:28.239 +05:30 [INF] Executing ViewResult, running view Index.
+2024-12-11 10:17:28.247 +05:30 [INF] Executed ViewResult - view Index executed in 7.7457ms.
+2024-12-11 10:17:28.276 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:17:28.276 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:17:28.291 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 67.9746ms
+2024-12-11 10:17:28.293 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 16.7944ms
+2024-12-11 10:17:28.298 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2024-12-11 10:17:28.301 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/ - 200 null text/html; charset=utf-8 89.4272ms
+2024-12-11 10:17:28.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.2317ms
+2024-12-11 10:17:33.114 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/VehicleType - null null
+2024-12-11 10:17:33.134 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2024-12-11 10:17:33.144 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "VehicleType", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2024-12-11 10:17:33.155 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2024-12-11 10:17:33.160 +05:30 [INF] Executing ViewResult, running view Index.
+2024-12-11 10:17:33.174 +05:30 [INF] Executed ViewResult - view Index executed in 14.983ms.
+2024-12-11 10:17:33.177 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web) in 30.4825ms
+2024-12-11 10:17:33.195 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2024-12-11 10:17:33.196 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/VehicleType - 200 null text/html; charset=utf-8 82.6818ms
+2024-12-11 10:17:33.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:17:33.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:17:33.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 8.1561ms
+2024-12-11 10:17:33.317 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.7229ms
+2024-12-11 10:17:36.163 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/VehicleType/Edit/03f905f4-d4ff-4f84-d767-08dd00ada1e2 - null null
+2024-12-11 10:17:36.181 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Edit (TopSpeed.Web)'
+2024-12-11 10:17:36.189 +05:30 [INF] Route matched with {area = "Admin", action = "Edit", controller = "VehicleType", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2024-12-11 10:17:36.209 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+WHERE [v].[Id] = @__id_0
+2024-12-11 10:17:36.213 +05:30 [INF] Executing ViewResult, running view Edit.
+2024-12-11 10:17:36.230 +05:30 [INF] Executed ViewResult - view Edit executed in 17.1256ms.
+2024-12-11 10:17:36.261 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:17:36.261 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:17:36.276 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Edit (TopSpeed.Web) in 83.2642ms
+2024-12-11 10:17:36.278 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 16.2648ms
+2024-12-11 10:17:36.282 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Edit (TopSpeed.Web)'
+2024-12-11 10:17:36.283 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/VehicleType/Edit/03f905f4-d4ff-4f84-d767-08dd00ada1e2 - 200 null text/html; charset=utf-8 119.8722ms
+2024-12-11 10:17:36.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.074ms
+2024-12-11 10:18:01.470 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/VehicleType/Edit/03f905f4-d4ff-4f84-d767-08dd00ada1e2 - null null
+2024-12-11 10:18:01.487 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Edit (TopSpeed.Web)'
+2024-12-11 10:18:01.490 +05:30 [INF] Route matched with {area = "Admin", action = "Edit", controller = "VehicleType", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2024-12-11 10:18:01.495 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+WHERE [v].[Id] = @__id_0
+2024-12-11 10:18:01.511 +05:30 [INF] Executing ViewResult, running view Edit.
+2024-12-11 10:18:01.525 +05:30 [INF] Executed ViewResult - view Edit executed in 13.1734ms.
+2024-12-11 10:18:01.873 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:18:01.874 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:18:01.895 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Edit (TopSpeed.Web) in 402.6062ms
+2024-12-11 10:18:01.899 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 25.3274ms
+2024-12-11 10:18:01.903 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Edit (TopSpeed.Web)'
+2024-12-11 10:18:01.931 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.9573ms
+2024-12-11 10:18:01.970 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/VehicleType/Edit/03f905f4-d4ff-4f84-d767-08dd00ada1e2 - 200 null text/html; charset=utf-8 499.4784ms
+2024-12-11 10:24:19.118 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/VehicleType - null null
+2024-12-11 10:24:19.137 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2024-12-11 10:24:19.143 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "VehicleType", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2024-12-11 10:24:19.154 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2024-12-11 10:24:19.161 +05:30 [INF] Executing ViewResult, running view Index.
+2024-12-11 10:24:19.165 +05:30 [INF] Executed ViewResult - view Index executed in 3.8502ms.
+2024-12-11 10:24:19.449 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:24:19.587 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web) in 442.5888ms
+2024-12-11 10:24:19.590 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:24:19.591 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2024-12-11 10:24:19.594 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/VehicleType - 200 null text/html; charset=utf-8 476.3058ms
+2024-12-11 10:24:19.597 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 148.0173ms
+2024-12-11 10:24:19.648 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.1395ms
+2024-12-11 10:24:25.049 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/VehicleType/Edit/03f905f4-d4ff-4f84-d767-08dd00ada1e2 - null null
+2024-12-11 10:24:25.070 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Edit (TopSpeed.Web)'
+2024-12-11 10:24:25.077 +05:30 [INF] Route matched with {area = "Admin", action = "Edit", controller = "VehicleType", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2024-12-11 10:24:25.082 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+WHERE [v].[Id] = @__id_0
+2024-12-11 10:24:25.084 +05:30 [INF] Executing ViewResult, running view Edit.
+2024-12-11 10:24:25.092 +05:30 [INF] Executed ViewResult - view Edit executed in 7.7065ms.
+2024-12-11 10:24:25.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:24:25.476 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:24:25.481 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Edit (TopSpeed.Web) in 401.918ms
+2024-12-11 10:24:25.482 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 49.7691ms
+2024-12-11 10:24:25.490 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Edit (TopSpeed.Web)'
+2024-12-11 10:24:25.492 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/VehicleType/Edit/03f905f4-d4ff-4f84-d767-08dd00ada1e2 - 200 null text/html; charset=utf-8 443.8334ms
+2024-12-11 10:24:25.598 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.1625ms
+2024-12-11 10:24:26.875 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/VehicleType - null null
+2024-12-11 10:24:26.877 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2024-12-11 10:24:26.879 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "VehicleType", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2024-12-11 10:24:26.883 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2024-12-11 10:24:26.885 +05:30 [INF] Executing ViewResult, running view Index.
+2024-12-11 10:24:27.032 +05:30 [INF] Executed ViewResult - view Index executed in 147.7194ms.
+2024-12-11 10:24:27.181 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:24:27.181 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:24:27.263 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web) in 382.8817ms
+2024-12-11 10:24:27.264 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 83.4414ms
+2024-12-11 10:24:27.274 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2024-12-11 10:24:27.275 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/VehicleType - 200 null text/html; charset=utf-8 400.3404ms
+2024-12-11 10:24:27.310 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 129.1511ms
+2024-12-11 10:24:31.414 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/VehicleType/Create - null null
+2024-12-11 10:24:31.426 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Create (TopSpeed.Web)'
+2024-12-11 10:24:31.432 +05:30 [INF] Route matched with {area = "Admin", action = "Create", controller = "VehicleType", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2024-12-11 10:24:31.440 +05:30 [INF] Executing ViewResult, running view Create.
+2024-12-11 10:24:31.455 +05:30 [INF] Executed ViewResult - view Create executed in 20.4864ms.
+2024-12-11 10:24:31.459 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Create (TopSpeed.Web) in 24.8909ms
+2024-12-11 10:24:31.464 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Create (TopSpeed.Web)'
+2024-12-11 10:24:31.671 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:24:31.709 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/VehicleType/Create - 200 null text/html; charset=utf-8 295.2628ms
+2024-12-11 10:24:31.712 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:24:31.714 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 44.0159ms
+2024-12-11 10:24:31.762 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.3098ms
+2024-12-11 10:24:34.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/VehicleType/Create - null null
+2024-12-11 10:24:34.541 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Create (TopSpeed.Web)'
+2024-12-11 10:24:34.543 +05:30 [INF] Route matched with {area = "Admin", action = "Create", controller = "VehicleType", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2024-12-11 10:24:34.545 +05:30 [INF] Executing ViewResult, running view Create.
+2024-12-11 10:24:34.547 +05:30 [INF] Executed ViewResult - view Create executed in 2.4476ms.
+2024-12-11 10:24:34.767 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:24:34.767 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:24:34.845 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Create (TopSpeed.Web) in 300.1457ms
+2024-12-11 10:24:34.846 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 79.4049ms
+2024-12-11 10:24:34.858 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Create (TopSpeed.Web)'
+2024-12-11 10:24:34.859 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/VehicleType/Create - 200 null text/html; charset=utf-8 353.6436ms
+2024-12-11 10:24:34.998 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 230.9634ms
+2024-12-11 10:24:45.187 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7093/Admin/VehicleType/Create - multipart/form-data; boundary=----WebKitFormBoundary2pHfEDtV1RCg7uc9 452
+2024-12-11 10:24:45.208 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Create (TopSpeed.Web)'
+2024-12-11 10:24:45.213 +05:30 [INF] Route matched with {area = "Admin", action = "Create", controller = "VehicleType", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TopSpeed.Domain.Models.VehicleType) on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2024-12-11 10:24:45.380 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [VehicleType] ([Id], [CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [Name])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-12-11 10:24:45.395 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/VehicleType.
+2024-12-11 10:24:45.398 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Create (TopSpeed.Web) in 182.9729ms
+2024-12-11 10:24:45.402 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Create (TopSpeed.Web)'
+2024-12-11 10:24:45.403 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7093/Admin/VehicleType/Create - 302 0 null 216.1594ms
+2024-12-11 10:24:45.409 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/VehicleType - null null
+2024-12-11 10:24:45.431 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2024-12-11 10:24:45.436 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "VehicleType", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2024-12-11 10:24:45.441 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2024-12-11 10:24:45.443 +05:30 [INF] Executing ViewResult, running view Index.
+2024-12-11 10:24:45.447 +05:30 [INF] Executed ViewResult - view Index executed in 3.7095ms.
+2024-12-11 10:24:45.620 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib//jquery/dist/jquery.min.js - null null
+2024-12-11 10:24:45.620 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:24:45.675 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:24:45.677 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web) in 237.8465ms
+2024-12-11 10:24:45.684 +05:30 [INF] Sending file. Request path: '/lib//jquery/dist/jquery.min.js'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\wwwroot\lib\jquery\dist\jquery.min.js'
+2024-12-11 10:24:45.685 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 65.1854ms
+2024-12-11 10:24:45.693 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2024-12-11 10:24:45.694 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib//jquery/dist/jquery.min.js - 200 89501 text/javascript 74.0388ms
+2024-12-11 10:24:45.709 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/VehicleType - 200 null text/html; charset=utf-8 300.437ms
+2024-12-11 10:24:45.722 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.7454ms
+2024-12-11 10:24:55.996 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/VehicleType - null null
+2024-12-11 10:24:56.003 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2024-12-11 10:24:56.004 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "VehicleType", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2024-12-11 10:24:56.007 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2024-12-11 10:24:56.010 +05:30 [INF] Executing ViewResult, running view Index.
+2024-12-11 10:24:56.012 +05:30 [INF] Executed ViewResult - view Index executed in 2.1005ms.
+2024-12-11 10:24:56.373 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-11 10:24:56.373 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2024-12-11 10:24:56.409 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web) in 403.5911ms
+2024-12-11 10:24:56.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 39.6125ms
+2024-12-11 10:24:56.425 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2024-12-11 10:24:56.427 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/VehicleType - 200 null text/html; charset=utf-8 430.6581ms
+2024-12-11 10:24:56.470 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.6731ms

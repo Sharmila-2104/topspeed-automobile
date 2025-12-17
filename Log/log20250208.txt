@@ -1,0 +1,520 @@
+2025-02-08 11:38:54.684 +05:30 [INF] Executed DbCommand (127ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-02-08 11:38:54.823 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-02-08 11:38:54.828 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-02-08 11:38:54.912 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-08 11:38:54.923 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-08 11:38:54.928 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-08 11:38:54.930 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-08 11:38:54.946 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-08 11:38:54.962 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-02-08 11:38:55.033 +05:30 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [VehicleType] AS [v]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-08 11:38:55.174 +05:30 [INF] User profile is available. Using 'C:\Users\SwiftProSys\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-08 11:38:55.777 +05:30 [INF] Now listening on: https://localhost:7093
+2025-02-08 11:38:55.793 +05:30 [INF] Now listening on: http://localhost:5113
+2025-02-08 11:38:55.869 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-08 11:38:55.874 +05:30 [INF] Hosting environment: Development
+2025-02-08 11:38:55.876 +05:30 [INF] Content root path: D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web
+2025-02-08 11:38:56.669 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/ - null null
+2025-02-08 11:38:57.113 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:38:57.174 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:38:57.238 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:38:57.251 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:38:57.396 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+2025-02-08 11:38:57.449 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:38:57.685 +05:30 [INF] Executed ViewResult - view Index executed in 238.7788ms.
+2025-02-08 11:38:57.763 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:38:58.476 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 1299.2695ms
+2025-02-08 11:38:58.486 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:38:58.494 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:38:58.502 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 739.1991ms
+2025-02-08 11:38:58.504 +05:30 [INF] Session started; Key:d231cc97-a058-bfa0-1de5-a0551077f574, Id:abc02566-0c3f-0964-c38c-b1d88f920358
+2025-02-08 11:38:58.519 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/ - 200 null text/html; charset=utf-8 1856.3745ms
+2025-02-08 11:38:58.523 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2025-02-08 11:38:58.527 +05:30 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2025-02-08 11:38:58.528 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2025-02-08 11:38:58.529 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 6.5493ms
+2025-02-08 11:38:58.532 +05:30 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2025-02-08 11:38:58.533 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 4.5976ms
+2025-02-08 11:38:58.535 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/css/site.css?v=w1mNYuscKYj6pXZh4YNqMZBB0mZ41S5DLTlJqyAiRu0 - null null
+2025-02-08 11:38:58.538 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/TopSpeed.Web.styles.css?v=YZkZwgPycvQ8GQf8xDuhpckUrq54SlaWlbvnQKSAm0Y - null null
+2025-02-08 11:38:58.540 +05:30 [INF] The file /css/site.css was not modified
+2025-02-08 11:38:58.581 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/css/site.css?v=w1mNYuscKYj6pXZh4YNqMZBB0mZ41S5DLTlJqyAiRu0 - 304 null text/css 45.6108ms
+2025-02-08 11:38:58.596 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib/jquery/dist/jquery.min.js - null null
+2025-02-08 11:38:58.599 +05:30 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2025-02-08 11:38:58.600 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib/jquery/dist/jquery.min.js - 304 null text/javascript 3.8643ms
+2025-02-08 11:38:58.603 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - null null
+2025-02-08 11:38:58.605 +05:30 [INF] Sending file. Request path: '/TopSpeed.Web.styles.css'. Physical path: 'D:\Sharmila\Old\Out Studies project\Testing\TopSpeedAutoMobile\TopSpeed.Web\obj\Debug\net8.0\scopedcss\bundle\TopSpeed.Web.styles.css'
+2025-02-08 11:38:58.606 +05:30 [INF] The file /js/site.js was not modified
+2025-02-08 11:38:58.607 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/TopSpeed.Web.styles.css?v=YZkZwgPycvQ8GQf8xDuhpckUrq54SlaWlbvnQKSAm0Y - 200 1129 text/css 69.4952ms
+2025-02-08 11:38:58.610 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - 304 null text/javascript 7.0062ms
+2025-02-08 11:38:58.620 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 133.0935ms
+2025-02-08 11:38:58.805 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/favicon.ico - null null
+2025-02-08 11:38:58.809 +05:30 [INF] The file /favicon.ico was not modified
+2025-02-08 11:38:58.810 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/favicon.ico - 304 null image/x-icon 4.657ms
+2025-02-08 11:39:10.660 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7093/ - application/x-www-form-urlencoded 292
+2025-02-08 11:39:10.674 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:10.699 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(TopSpeed.Domain.ViewModel.HomePostVM) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:10.755 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__brandId_0='?' (DbType = Guid), @__vehicleTypeId_1='?' (DbType = Guid), @__searchName_2_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+WHERE [p].[BrandID] = @__brandId_0 AND [p].[VehicleTypeID] = @__vehicleTypeId_1 AND [p].[Name] LIKE @__searchName_2_contains ESCAPE N'\'
+ORDER BY [p].[ModifiedOn] DESC
+2025-02-08 11:39:10.969 +05:30 [INF] Executing RedirectResult, redirecting to /?page=1&resetFilter=False.
+2025-02-08 11:39:10.973 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 270.7977ms
+2025-02-08 11:39:10.974 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:10.976 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7093/ - 302 0 null 315.453ms
+2025-02-08 11:39:10.982 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/?page=1&resetFilter=False - null null
+2025-02-08 11:39:10.987 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:10.988 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:11.003 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:39:11.007 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:39:11.019 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:11.027 +05:30 [INF] Executed ViewResult - view Index executed in 7.8276ms.
+2025-02-08 11:39:11.101 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:11.108 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 118.4963ms
+2025-02-08 11:39:11.110 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:11.114 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:11.116 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 15.4024ms
+2025-02-08 11:39:11.118 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/?page=1&resetFilter=False - 200 null text/html; charset=utf-8 135.8428ms
+2025-02-08 11:39:11.139 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.8656ms
+2025-02-08 11:39:12.402 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7093/?page=1&resetFilter=False - application/x-www-form-urlencoded 289
+2025-02-08 11:39:12.416 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:12.418 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(TopSpeed.Domain.ViewModel.HomePostVM) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:12.437 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__brandId_0='?' (DbType = Guid), @__vehicleTypeId_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+WHERE [p].[BrandID] = @__brandId_0 AND [p].[VehicleTypeID] = @__vehicleTypeId_1
+ORDER BY [p].[ModifiedOn] DESC
+2025-02-08 11:39:12.440 +05:30 [INF] Executing RedirectResult, redirecting to /?page=1&resetFilter=False.
+2025-02-08 11:39:12.441 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 20.8994ms
+2025-02-08 11:39:12.442 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:12.443 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7093/?page=1&resetFilter=False - 302 0 null 41.5912ms
+2025-02-08 11:39:12.450 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/?page=1&resetFilter=False - null null
+2025-02-08 11:39:12.454 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:12.455 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:12.458 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:39:12.463 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:39:12.466 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:12.474 +05:30 [INF] Executed ViewResult - view Index executed in 8.5157ms.
+2025-02-08 11:39:12.524 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:12.524 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:12.525 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 68.6615ms
+2025-02-08 11:39:12.534 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 9.9843ms
+2025-02-08 11:39:12.543 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:12.553 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.4521ms
+2025-02-08 11:39:12.558 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/?page=1&resetFilter=False - 200 null text/html; charset=utf-8 108.2467ms
+2025-02-08 11:39:15.105 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7093/?page=1&resetFilter=False - application/x-www-form-urlencoded 289
+2025-02-08 11:39:15.121 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:15.123 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(TopSpeed.Domain.ViewModel.HomePostVM) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:15.130 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__brandId_0='?' (DbType = Guid), @__vehicleTypeId_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+WHERE [p].[BrandID] = @__brandId_0 AND [p].[VehicleTypeID] = @__vehicleTypeId_1
+ORDER BY [p].[ModifiedOn] DESC
+2025-02-08 11:39:15.136 +05:30 [INF] Executing RedirectResult, redirecting to /?page=1&resetFilter=False.
+2025-02-08 11:39:15.137 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 12.2649ms
+2025-02-08 11:39:15.138 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:15.139 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7093/?page=1&resetFilter=False - 302 0 null 33.5957ms
+2025-02-08 11:39:15.142 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/?page=1&resetFilter=False - null null
+2025-02-08 11:39:15.150 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:15.151 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:15.154 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:39:15.157 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:39:15.159 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:15.167 +05:30 [INF] Executed ViewResult - view Index executed in 7.425ms.
+2025-02-08 11:39:15.209 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:15.216 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 62.8786ms
+2025-02-08 11:39:15.218 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:15.222 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 12.9251ms
+2025-02-08 11:39:15.223 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:15.224 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/?page=1&resetFilter=False - 200 null text/html; charset=utf-8 82.4779ms
+2025-02-08 11:39:15.238 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.8349ms
+2025-02-08 11:39:18.153 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7093/?page=1&resetFilter=False - application/x-www-form-urlencoded 289
+2025-02-08 11:39:18.170 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:18.171 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(TopSpeed.Domain.ViewModel.HomePostVM) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:18.191 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__brandId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+WHERE [p].[BrandID] = @__brandId_0
+ORDER BY [p].[ModifiedOn] DESC
+2025-02-08 11:39:18.199 +05:30 [INF] Executing RedirectResult, redirecting to /?page=1&resetFilter=False.
+2025-02-08 11:39:18.200 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 27.4011ms
+2025-02-08 11:39:18.201 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:18.202 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7093/?page=1&resetFilter=False - 302 0 null 48.5077ms
+2025-02-08 11:39:18.206 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/?page=1&resetFilter=False - null null
+2025-02-08 11:39:18.214 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:18.216 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:18.219 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:39:18.221 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:39:18.223 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:18.230 +05:30 [INF] Executed ViewResult - view Index executed in 6.6178ms.
+2025-02-08 11:39:18.274 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:18.274 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:18.275 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 57.8699ms
+2025-02-08 11:39:18.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 5.8468ms
+2025-02-08 11:39:18.287 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:18.290 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/?page=1&resetFilter=False - 200 null text/html; charset=utf-8 83.833ms
+2025-02-08 11:39:18.306 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.5811ms
+2025-02-08 11:39:21.730 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7093/?page=1&resetFilter=False - application/x-www-form-urlencoded 289
+2025-02-08 11:39:21.752 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:21.755 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(TopSpeed.Domain.ViewModel.HomePostVM) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:21.765 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__brandId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+WHERE [p].[BrandID] = @__brandId_0
+ORDER BY [p].[ModifiedOn] DESC
+2025-02-08 11:39:21.768 +05:30 [INF] Executing RedirectResult, redirecting to /?page=1&resetFilter=False.
+2025-02-08 11:39:21.769 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 11.8822ms
+2025-02-08 11:39:21.770 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:21.771 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7093/?page=1&resetFilter=False - 302 0 null 41.3311ms
+2025-02-08 11:39:21.775 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/?page=1&resetFilter=False - null null
+2025-02-08 11:39:21.783 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:21.784 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:21.788 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:39:21.790 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:39:21.795 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:21.799 +05:30 [INF] Executed ViewResult - view Index executed in 3.6871ms.
+2025-02-08 11:39:21.804 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 17.6307ms
+2025-02-08 11:39:21.839 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:21.840 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/?page=1&resetFilter=False - 200 null text/html; charset=utf-8 65.5728ms
+2025-02-08 11:39:21.854 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:21.854 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:21.862 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 7.9007ms
+2025-02-08 11:39:21.880 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.5591ms
+2025-02-08 11:39:22.434 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/?page=1&resetFilter=True - null null
+2025-02-08 11:39:22.450 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:22.452 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:22.455 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:39:22.461 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:39:22.465 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+2025-02-08 11:39:22.468 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:22.471 +05:30 [INF] Executed ViewResult - view Index executed in 3.0665ms.
+2025-02-08 11:39:22.523 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:22.529 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:22.532 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 78.2711ms
+2025-02-08 11:39:22.534 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 10.7337ms
+2025-02-08 11:39:22.538 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:22.539 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/?page=1&resetFilter=True - 200 null text/html; charset=utf-8 106.4141ms
+2025-02-08 11:39:22.565 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.5756ms
+2025-02-08 11:39:25.251 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/ - null null
+2025-02-08 11:39:25.262 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:25.264 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:25.269 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:39:25.271 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:39:25.273 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+2025-02-08 11:39:25.280 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:25.283 +05:30 [INF] Executed ViewResult - view Index executed in 2.839ms.
+2025-02-08 11:39:25.334 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:25.335 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 67.7076ms
+2025-02-08 11:39:25.337 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:25.338 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:25.339 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/ - 200 null text/html; charset=utf-8 88.001ms
+2025-02-08 11:39:25.342 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 8.102ms
+2025-02-08 11:39:25.352 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.172ms
+2025-02-08 11:39:29.332 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Identity/Account/Login - null null
+2025-02-08 11:39:29.339 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-02-08 11:39:29.366 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-02-08 11:39:29.376 +05:30 [INF] Executing handler method TopSpeed.Web.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-02-08 11:39:29.381 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2025-02-08 11:39:29.383 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2025-02-08 11:39:29.386 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-02-08 11:39:29.387 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-02-08 11:39:29.425 +05:30 [INF] Executed page /Account/Login in 56.0794ms
+2025-02-08 11:39:29.503 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2025-02-08 11:39:29.503 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2025-02-08 11:39:29.503 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:29.504 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:29.505 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-02-08 11:39:29.511 +05:30 [INF] The file /lib/jquery-validation/dist/jquery.validate.min.js was not modified
+2025-02-08 11:39:29.514 +05:30 [INF] The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js was not modified
+2025-02-08 11:39:29.514 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 11.3341ms
+2025-02-08 11:39:29.517 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Identity/Account/Login - 200 null text/html; charset=utf-8 185.2521ms
+2025-02-08 11:39:29.519 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib/jquery-validation/dist/jquery.validate.min.js - 304 null text/javascript 15.9354ms
+2025-02-08 11:39:29.520 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 304 null text/javascript 17.0607ms
+2025-02-08 11:39:29.580 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 76.8205ms
+2025-02-08 11:39:31.166 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7093/Identity/Account/Login - application/x-www-form-urlencoded 272
+2025-02-08 11:39:31.180 +05:30 [INF] Executing endpoint '/Account/Login'
+2025-02-08 11:39:31.187 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-02-08 11:39:31.196 +05:30 [INF] Executing handler method TopSpeed.Web.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2025-02-08 11:39:31.215 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-08 11:39:31.395 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-02-08 11:39:31.414 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-08 11:39:31.419 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-02-08 11:39:31.431 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-02-08 11:39:31.436 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-02-08 11:39:31.439 +05:30 [INF] User logged in.
+2025-02-08 11:39:31.443 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-02-08 11:39:31.446 +05:30 [INF] Executing LocalRedirectResult, redirecting to /.
+2025-02-08 11:39:31.447 +05:30 [INF] Executed page /Account/Login in 258.374ms
+2025-02-08 11:39:31.447 +05:30 [INF] Executed endpoint '/Account/Login'
+2025-02-08 11:39:31.452 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/ - null null
+2025-02-08 11:39:31.452 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7093/Identity/Account/Login - 302 0 null 285.432ms
+2025-02-08 11:39:31.462 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:31.462 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:31.466 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:39:31.468 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:39:31.471 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+2025-02-08 11:39:31.475 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:31.480 +05:30 [INF] Executed ViewResult - view Index executed in 5.4782ms.
+2025-02-08 11:39:31.530 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:31.531 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 66.7415ms
+2025-02-08 11:39:31.533 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 3.1236ms
+2025-02-08 11:39:31.536 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:31.537 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/ - 200 null text/html; charset=utf-8 84.9875ms
+2025-02-08 11:39:31.540 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:31.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.4201ms
+2025-02-08 11:39:35.336 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/VehicleType - null null
+2025-02-08 11:39:35.350 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:35.354 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "VehicleType", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2025-02-08 11:39:35.367 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:39:35.371 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:35.383 +05:30 [INF] Executed ViewResult - view Index executed in 13.2192ms.
+2025-02-08 11:39:35.385 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web) in 24.7344ms
+2025-02-08 11:39:35.411 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:35.416 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/VehicleType - 200 null text/html; charset=utf-8 79.4124ms
+2025-02-08 11:39:35.517 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:35.517 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:35.520 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 2.9361ms
+2025-02-08 11:39:35.538 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.0973ms
+2025-02-08 11:39:37.787 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/Post - null null
+2025-02-08 11:39:37.812 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.PostController.Index (TopSpeed.Web)'
+2025-02-08 11:39:37.815 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "Post", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TopSpeed.Web.Areas.Admin.Controllers.PostController (TopSpeed.Web).
+2025-02-08 11:39:37.819 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+2025-02-08 11:39:37.826 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:37.836 +05:30 [INF] Executed ViewResult - view Index executed in 10.513ms.
+2025-02-08 11:39:37.852 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.PostController.Index (TopSpeed.Web) in 35.2906ms
+2025-02-08 11:39:37.874 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.PostController.Index (TopSpeed.Web)'
+2025-02-08 11:39:37.875 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/Post - 200 null text/html; charset=utf-8 88.2013ms
+2025-02-08 11:39:37.886 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:37.886 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:37.892 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 6.0338ms
+2025-02-08 11:39:37.901 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.8857ms
+2025-02-08 11:39:40.602 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/Brand - null null
+2025-02-08 11:39:40.633 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.BrandController.Index (TopSpeed.Web)'
+2025-02-08 11:39:40.644 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "Brand", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TopSpeed.Web.Areas.Admin.Controllers.BrandController (TopSpeed.Web).
+2025-02-08 11:39:40.662 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:39:40.665 +05:30 [INF] Brand List Fetched from Database Successfully
+2025-02-08 11:39:40.676 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:40.692 +05:30 [INF] Executed ViewResult - view Index executed in 17.1093ms.
+2025-02-08 11:39:40.790 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:40.795 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.BrandController.Index (TopSpeed.Web) in 148.3014ms
+2025-02-08 11:39:40.796 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:40.797 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.BrandController.Index (TopSpeed.Web)'
+2025-02-08 11:39:40.798 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/Brand - 200 null text/html; charset=utf-8 195.6057ms
+2025-02-08 11:39:40.799 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 9.2964ms
+2025-02-08 11:39:40.826 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.2043ms
+2025-02-08 11:39:47.527 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/Brand - null null
+2025-02-08 11:39:47.546 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.BrandController.Index (TopSpeed.Web)'
+2025-02-08 11:39:47.547 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "Brand", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TopSpeed.Web.Areas.Admin.Controllers.BrandController (TopSpeed.Web).
+2025-02-08 11:39:47.551 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:39:47.558 +05:30 [INF] Brand List Fetched from Database Successfully
+2025-02-08 11:39:47.558 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:47.623 +05:30 [INF] Executed ViewResult - view Index executed in 64.3561ms.
+2025-02-08 11:39:47.644 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:47.644 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:47.659 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.BrandController.Index (TopSpeed.Web) in 110.6539ms
+2025-02-08 11:39:47.660 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 15.9718ms
+2025-02-08 11:39:47.668 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.BrandController.Index (TopSpeed.Web)'
+2025-02-08 11:39:47.675 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.4825ms
+2025-02-08 11:39:47.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/Brand - 200 null text/html; charset=utf-8 155.3745ms
+2025-02-08 11:39:49.132 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/VehicleType - null null
+2025-02-08 11:39:49.147 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:49.149 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "VehicleType", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController (TopSpeed.Web).
+2025-02-08 11:39:49.158 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:39:49.160 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:49.162 +05:30 [INF] Executed ViewResult - view Index executed in 2.5849ms.
+2025-02-08 11:39:49.216 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:49.248 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web) in 97.1897ms
+2025-02-08 11:39:49.249 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:49.250 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.VehicleTypeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:49.251 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/VehicleType - 200 null text/html; charset=utf-8 118.6222ms
+2025-02-08 11:39:49.255 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 39.7779ms
+2025-02-08 11:39:49.261 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.065ms
+2025-02-08 11:39:52.259 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/Admin/Post - null null
+2025-02-08 11:39:52.276 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Admin.Controllers.PostController.Index (TopSpeed.Web)'
+2025-02-08 11:39:52.279 +05:30 [INF] Route matched with {area = "Admin", action = "Index", controller = "Post", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TopSpeed.Web.Areas.Admin.Controllers.PostController (TopSpeed.Web).
+2025-02-08 11:39:52.290 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+2025-02-08 11:39:52.294 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:52.296 +05:30 [INF] Executed ViewResult - view Index executed in 1.9871ms.
+2025-02-08 11:39:52.300 +05:30 [INF] Executed action TopSpeed.Web.Areas.Admin.Controllers.PostController.Index (TopSpeed.Web) in 18.6094ms
+2025-02-08 11:39:52.343 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:52.343 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:52.344 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Admin.Controllers.PostController.Index (TopSpeed.Web)'
+2025-02-08 11:39:52.346 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 3.1486ms
+2025-02-08 11:39:52.350 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/Admin/Post - 200 null text/html; charset=utf-8 90.7679ms
+2025-02-08 11:39:52.357 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.9204ms
+2025-02-08 11:39:53.930 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/ - null null
+2025-02-08 11:39:53.943 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:53.945 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:39:53.950 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:39:53.956 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:39:53.959 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+2025-02-08 11:39:53.961 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:39:53.964 +05:30 [INF] Executed ViewResult - view Index executed in 2.9726ms.
+2025-02-08 11:39:54.005 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 55.7221ms
+2025-02-08 11:39:54.011 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:39:54.012 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:39:54.014 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:39:54.016 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 4.1244ms
+2025-02-08 11:39:54.023 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/ - 200 null text/html; charset=utf-8 92.6435ms
+2025-02-08 11:39:54.032 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.2414ms
+2025-02-08 11:40:06.211 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7093/Identity/Account/Logout?returnUrl=%2F - application/x-www-form-urlencoded 225
+2025-02-08 11:40:06.229 +05:30 [INF] Executing endpoint '/Account/Logout'
+2025-02-08 11:40:06.238 +05:30 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2025-02-08 11:40:06.242 +05:30 [INF] Executing handler method TopSpeed.Web.Areas.Identity.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2025-02-08 11:40:06.244 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-02-08 11:40:06.245 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2025-02-08 11:40:06.246 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-02-08 11:40:06.247 +05:30 [INF] User logged out.
+2025-02-08 11:40:06.251 +05:30 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-02-08 11:40:06.253 +05:30 [INF] Executing LocalRedirectResult, redirecting to /.
+2025-02-08 11:40:06.254 +05:30 [INF] Executed page /Account/Logout in 13.6292ms
+2025-02-08 11:40:06.256 +05:30 [INF] Executed endpoint '/Account/Logout'
+2025-02-08 11:40:06.257 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7093/Identity/Account/Logout?returnUrl=%2F - 302 0 null 46.3489ms
+2025-02-08 11:40:06.261 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/ - null null
+2025-02-08 11:40:06.268 +05:30 [INF] Executing endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:40:06.271 +05:30 [INF] Route matched with {area = "Customer", action = "Index", controller = "Home", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], Boolean) on controller TopSpeed.Web.Areas.Customer.Controllers.HomeController (TopSpeed.Web).
+2025-02-08 11:40:06.276 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name]
+FROM [Brand] AS [b]
+2025-02-08 11:40:06.278 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [VehicleType] AS [v]
+2025-02-08 11:40:06.284 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandID], [p].[CreatedBy], [p].[CreatedOn], [p].[Engine], [p].[EngineAndFuelType], [p].[Mileage], [p].[ModifiedBy], [p].[ModifiedOn], [p].[Name], [p].[PriceFrom], [p].[PriceTo], [p].[Range], [p].[Ratings], [p].[SeatingCapacity], [p].[TopSpeed], [p].[Transmission], [p].[VehicleTypeID], [p].[vehicleImage], [b].[Id], [b].[BrandLogo], [b].[CreatedBy], [b].[CreatedOn], [b].[Establishyear], [b].[ModifiedBy], [b].[ModifiedOn], [b].[Name], [v].[Id], [v].[CreatedBy], [v].[CreatedOn], [v].[ModifiedBy], [v].[ModifiedOn], [v].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Brand] AS [b] ON [p].[BrandID] = [b].[Id]
+INNER JOIN [VehicleType] AS [v] ON [p].[VehicleTypeID] = [v].[Id]
+2025-02-08 11:40:06.288 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 11:40:06.291 +05:30 [INF] Executed ViewResult - view Index executed in 2.6202ms.
+2025-02-08 11:40:06.330 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 11:40:06.330 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7093/_vs/browserLink - null null
+2025-02-08 11:40:06.337 +05:30 [INF] Executed action TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web) in 62.6434ms
+2025-02-08 11:40:06.352 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 21.9593ms
+2025-02-08 11:40:06.356 +05:30 [INF] Executed endpoint 'TopSpeed.Web.Areas.Customer.Controllers.HomeController.Index (TopSpeed.Web)'
+2025-02-08 11:40:06.358 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.6825ms
+2025-02-08 11:40:06.359 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7093/ - 200 null text/html; charset=utf-8 98.395ms
