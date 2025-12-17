@@ -1,6 +1,3 @@
-# topspeed-automobile
-Automobile management system developed using ASP.NET Core MVC, Entity Framework Core, Unit of Work pattern, and SQL Server.
-
 # TopSpeed Automobile Management System
 
 ASP.NET Core MVC application for managing automobile-related master data.
